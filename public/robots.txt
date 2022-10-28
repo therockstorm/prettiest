@@ -4,3 +4,6 @@ Allow: /
 
 # Host
 Host: https://prettiest.pages.dev/
+
+# Sitemaps
+Sitemap: https://prettiest.pages.dev/sitemap.xml

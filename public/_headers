@@ -1,0 +1,10 @@
+/_
+Access-Control-Allow-Methods: GET
+Content-Security-Policy: default-src 'none'; upgrade-insecure-requests;
+Permissions-Policy: fullscreen=(),geolocation=(),camera=()
+Referrer-Policy: strict-origin-when-cross-origin
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-DNS-Prefetch-Control: on
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
