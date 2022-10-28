@@ -10,7 +10,6 @@
   <title>Prettiest</title>
 
   <link rel="stylesheet" href="index.css" />
-  <script src="components/text-area.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -19,7 +18,8 @@
     <main style="display: flex; margin: 1em 0 1em 0">
       <div>
         <label for="before">JSON to format</label>
-        <text-area id="before"></text-area>
+        <textarea autocapitalize="none" autocomplete="off" autocorrect="off" cols="30" id="before" rows="30"
+          spellcheck="false" wrap="off"></textarea>
       </div>
       <button id="pretty" style="
             margin: 0 1.25em;
@@ -31,7 +31,8 @@
       </button>
       <div>
         <label for="after">Formatted JSON</label>
-        <text-area id="after"></text-area>
+        <textarea autocapitalize="none" autocomplete="off" autocorrect="off" cols="30" id="after" rows="30"
+          spellcheck="false" wrap="off"></textarea>
       </div>
     </main>
     <div>

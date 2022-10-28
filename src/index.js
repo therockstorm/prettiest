@@ -7,9 +7,7 @@ pretty.addEventListener(
   "click",
   function () {
     try {
-      const b = before.children[1].value;
-      const parsed = JSON.parse(b);
-      after.children[1].value = JSON.stringify(parsed, null, 2);
+      after.value = JSON.stringify(JSON.parse(before.value), null, 2);
     } catch (e) {
       error.innerText = e.message;
     }

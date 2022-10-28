@@ -60,3 +60,8 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   justify-content: center;
 }
+
+textarea {
+  resize: none;
+  width: 100%;
+}
