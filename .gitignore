@@ -1,0 +1,4 @@
+/.partiel-cache/
+/dist/
+
+node_modules/
