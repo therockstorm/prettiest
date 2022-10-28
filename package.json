@@ -17,7 +17,7 @@
   "name": "prettiest",
   "private": true,
   "scripts": {
-    "build": "parcel build",
+    "build": "parcel build && cp src/robots.txt dist",
     "clean": "rm -rf .parcel-cache dist node_modules",
     "format": "prettier --write .",
     "format:check": "prettier --check .",

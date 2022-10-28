@@ -7,7 +7,6 @@ class TextArea extends HTMLElement {
     this.innerHTML = `
       <style>
         textarea {
-          height: 100%;
           resize: none;
           width: 100%;
         }

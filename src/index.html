@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Prettiest</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Code formatting and parsing." />
 
-    <link rel="stylesheet" href="index.css" />
-    <script src="components/text-area.js" type="text/javascript" defer></script>
-  </head>
+  <title>Prettiest</title>
 
-  <body>
-    <div style="margin: 2em 0 1em 0">
-      <h1>Prettiest JSON</h1>
-      <main style="display: flex; margin: 1em 0 1em 0">
+  <link rel="stylesheet" href="index.css" />
+  <script src="components/text-area.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+  <div style="margin: 2em 0 1em 0">
+    <h1>Prettiest JSON</h1>
+    <main style="display: flex; margin: 1em 0 1em 0">
+      <div>
+        <label for="before">JSON to format</label>
         <text-area id="before"></text-area>
-        <button
-          id="pretty"
-          style="
+      </div>
+      <button id="pretty" style="
             margin: 0 1.25em;
             padding: 1.25em;
             height: 100%;
             align-self: center;
-          "
-        >
-          Prettiest
-        </button>
+          ">
+        Prettiest
+      </button>
+      <div>
+        <label for="after">Formatted JSON</label>
         <text-area id="after"></text-area>
-      </main>
+      </div>
+    </main>
+    <div>
       <p id="error" style="color: var(--red-700)"></p>
     </div>
+  </div>
 
-    <script src="index.js" type="module"></script>
-  </body>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
