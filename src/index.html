@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Prettiest</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="index.css" />
-  </head>
+  <title>Prettiest</title>
 
-  <body>
-    <h1>Task List</h1>
-    <p id="msg">Current tasks:</p>
-    <ul>
-      <li class="list">Add visual styles</li>
-      <li class="list">Add light and dark themes</li>
-      <li>Enable switching the theme</li>
-    </ul>
-    <script src="index.js" type="module"></script>
-  </body>
+  <link rel="stylesheet" href="index.css" />
+  <script src="components/text-area.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+  <h1>Prettiest JSON</h1>
+  <main style="display: flex;">
+    <text-area id="before"></text-area>
+    <button id="pretty" style="margin: 0 1.25em; padding: 1.25em;">Prettiest</button>
+    <text-area id="after"></text-area>
+    <p id="error"></p>
+  </main>
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
