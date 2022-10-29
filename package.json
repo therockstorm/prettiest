@@ -1,17 +1,20 @@
 {
   "author": "Rocky Warren",
   "browserslist": "> 0.5%, last 2 versions, not dead",
+  "dependencies": {
+    "prettier": "2.7.1"
+  },
   "description": "Code formatting and parsing.",
   "devDependencies": {
     "@commitlint/cli": "17.1.2",
     "@commitlint/config-conventional": "17.1.0",
+    "buffer": "^6.0.3",
     "eslint": "8.26.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-simple-import-sort": "8.0.0",
     "eslint-plugin-sonarjs": "0.16.0",
     "husky": "8.0.1",
-    "parcel": "latest",
-    "prettier": "2.7.1"
+    "parcel": "latest"
   },
   "license": "MIT",
   "name": "prettiest",

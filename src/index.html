@@ -13,10 +13,24 @@
 
   <body>
     <div style="margin: 2em 0 1em 0">
-      <h1>Prettiest JSON</h1>
+      <h1 style="margin-bottom: 1em">Prettiest</h1>
+      <label for="format">Format:</label>
+      <select id="format">
+        <option value="css">CSS</option>
+        <option value="graphql">GraphQL</option>
+        <option value="html">HTML</option>
+        <option selected value="babel">JavaScript</option>
+        <option selected value="json-stringify">JSON</option>
+        <option value="less">Less</option>
+        <option value="markdown">Markdown</option>
+        <option value="mdx">MDX</option>
+        <option value="scss">SCSS</option>
+        <option value="typescript">TypeScript</option>
+        <option value="yaml">YAML</option>
+      </select>
       <main style="display: flex; margin: 1em 0 1em 0">
         <div>
-          <label for="before">JSON to format</label>
+          <label for="before">Input</label>
           <textarea
             autocapitalize="none"
             autocomplete="off"
@@ -40,13 +54,14 @@
           Prettiest
         </button>
         <div>
-          <label for="after">Formatted JSON</label>
+          <label for="after">Output</label>
           <textarea
             autocapitalize="none"
             autocomplete="off"
             autocorrect="off"
             cols="30"
             id="after"
+            readonly
             rows="30"
             spellcheck="false"
             wrap="off"
