@@ -2,7 +2,7 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-[Online services for formatting or parsing code](https://www.thoughtworks.com/radar/tools/online-services-for-formatting-or-parsing-code)
+[Online services for formatting or parsing code](https://www.thoughtworks.com/radar/tools/online-services-for-formatting-or-parsing-code) can be a security risk. This site does everything client-side. If you trust [Prettier](https://prettier.io/), you can trust this site.
 
 ## Table of Contents
 

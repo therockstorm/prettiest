@@ -7,11 +7,13 @@ import typescript from "prettier/parser-typescript";
 import yaml from "prettier/parser-yaml";
 import { format } from "prettier/standalone";
 
-const formatSelect = document.getElementById("format");
-const before = document.getElementById("before");
-const pretty = document.getElementById("pretty");
-const after = document.getElementById("after");
-const error = document.getElementById("error");
+const [after, before, error, formatSelect, pretty] = [
+  "after",
+  "before",
+  "error",
+  "format",
+  "pretty",
+].map(document.getElementById);
 
 pretty.addEventListener(
   "click",
